@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    background-color: #2a2b2b;
+    color: white;
+    margin: 0 !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    /* background-color: yellow; */
+    height: 10vh;
+    text-align: center;
+}
+
+h1{
+    margin: 0;
+}
+
+main{
+    /* background-color: red; */
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    background-color: #3d3d3d;
+    width: 50%;
+    height: 90%;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.50);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.50);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.50);
+}
+
+form{
+    margin: 0;
+}
+
+         
+button {
+    background-image: linear-gradient(to right, #FF8008 0%, #FFC837  51%, #FF8008  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    /* box-shadow: 0 0 20px #eee; */
+    border-radius: 10px;
+    display: block;
+    font-weight: bold;
+    border: none;
+}
+
+button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+ 
+
+footer{
+    /* background-color: green; */
+    height: 10vh;
+    margin-top: 0;
+    text-align: center;
+}
+
+footer h4{
+    margin: 0;
+}

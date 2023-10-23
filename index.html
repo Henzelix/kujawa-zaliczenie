@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
@@ -6,8 +7,23 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <h1>kantor guwno</h1>
+    </header>
+    <main>
+        <section id="container">
+            <h2>pzelicz</h2>
+            <p id="currentDate">xx:xx:xx</p>
+            <p id="currentRates">xd</p>
+            <form onsubmit="przelicz(event)">
+                <input type="number" onchange="przelicz(event)" value="1" step="0.01" name="" id="currencyInput"><br>
+                <button type="submit">przelicz</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h4>miolaj henzel</h4>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
