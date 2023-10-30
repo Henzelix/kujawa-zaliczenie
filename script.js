@@ -38,6 +38,19 @@ fetch(apiUrl)
 const przelicz = (event) => {
     event.preventDefault()
     const inputValue = document.getElementById('currencyInput');
-    const number = inputValue.value;
-    currentRatesParagraph.innerText = `${number}PLN = ${(eur*number).toFixed(2)}EUR\n${number}PLN = ${(usd*number).toFixed(2)}USD\n${number}PLN = ${(cad*number).toFixed(2)}CAD`
+    let afterComma;
+    if(inputValue.value.toString().includes('.')){
+      afterComma = inputValue.value.toString().split('.')[1];
+      console.log(afterComma);
+
+      if (afterComma.length>2){
+        currentRatesParagraph.innerText = "niepoprawne dane";
+      }else{
+        const number = inputValue.value;
+        currentRatesParagraph.innerText = `${number}PLN = ${(eur*number).toFixed(2)}EUR\n${number}PLN = ${(usd*number).toFixed(2)}USD\n${number}PLN = ${(cad*number).toFixed(2)}CAD`
+      }
+    }else{
+      const number = inputValue.value;
+      currentRatesParagraph.innerText = `${number}PLN = ${(eur*number).toFixed(2)}EUR\n${number}PLN = ${(usd*number).toFixed(2)}USD\n${number}PLN = ${(cad*number).toFixed(2)}CAD`
+    }
 }
